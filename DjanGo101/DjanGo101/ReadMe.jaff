@@ -8,3 +8,20 @@ On the hand, an app in Django is a self-contained, reusable module that represen
 your web application. A Django project can have multiple apps, each responsible for a specific aspect of the application. 
 Apps contain models (database schemas), views (handling HTTP requests and responses), templates (HTML files), and other 
 app-specific files. Examples of apps might include a blog app, a user authentication app, an e-commerce app, etc.
+
+*Installing Django
+--> pip install django
+
+*Creating a New Project
+--> django-admin startproject project_name
+
+*Running a Django Project
+--> python manage.py runserver
+[By default, the development server runs on http://127.0.0.1:8000/]
+
+*Running Django project on a specific port
+--> python manage.py runserver [port]
+[python manage.py runserver 8080]
+
+*Creating Django Apps*
+--> python manage.py startapp book_store
