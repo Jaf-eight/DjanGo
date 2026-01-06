@@ -1,0 +1,10 @@
+# Django Apps
+
+In the Django web framework, a project and an app are related but distinct concepts. A Django project is a collection 
+of settings and configurations for a particular Django web application. It acts as a container for one or more Django apps. 
+It defines the database settings, installed apps, middleware, templates, and other project-level configurations.
+
+On the hand, an app in Django is a self-contained, reusable module that represents a specific functionality or feature of 
+your web application. A Django project can have multiple apps, each responsible for a specific aspect of the application. 
+Apps contain models (database schemas), views (handling HTTP requests and responses), templates (HTML files), and other 
+app-specific files. Examples of apps might include a blog app, a user authentication app, an e-commerce app, etc.
