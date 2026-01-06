@@ -1,27 +1,37 @@
-# Django Apps
+Django Apps
+------------
+In the Django web framework, a project and an app are related but distinct concepts. A Django project is a collection of settings and 
+configurations for a particular Django web application. It acts as a container for one or more Django apps. It defines the database settings, 
+installed apps, middleware, templates, and other project-level configurations.
 
-In the Django web framework, a project and an app are related but distinct concepts. A Django project is a collection 
-of settings and configurations for a particular Django web application. It acts as a container for one or more Django apps. 
-It defines the database settings, installed apps, middleware, templates, and other project-level configurations.
+On the hand, an app in Django is a self-contained, reusable module that represents a specific functionality or feature of your web application. 
+A Django project can have multiple apps, each responsible for a specific aspect of the application. Apps contain models (database schemas), 
+views (handling HTTP requests and responses), templates (HTML files), and other app-specific files. Examples of apps might include a blog app, 
+a user authentication app, an e-commerce app, etc.
 
-On the hand, an app in Django is a self-contained, reusable module that represents a specific functionality or feature of 
-your web application. A Django project can have multiple apps, each responsible for a specific aspect of the application. 
-Apps contain models (database schemas), views (handling HTTP requests and responses), templates (HTML files), and other 
-app-specific files. Examples of apps might include a blog app, a user authentication app, an e-commerce app, etc.
+Projects vs. apps
+-----------------
+What’s the difference between a project and an app? An app is a web application that does something 
+– e.g., a blog system, a database of public records or a small poll app. A project is a collection of configuration and apps for a particular 
+website. A project can contain multiple apps. An app can be in multiple projects.
 
-*Installing Django
+
+#Installing Django
 --> pip install django
 
-*Creating a New Project
+#Django Version Check
+$ python -m django --version
+
+#Creating a New Project
 --> django-admin startproject project_name
 
-*Running a Django Project
+#Running a Django Project
 --> python manage.py runserver
 [By default, the development server runs on http://127.0.0.1:8000/]
 
-*Running Django project on a specific port
+#Running Django project on a specific port
 --> python manage.py runserver [port]
 [python manage.py runserver 8080]
 
-*Creating Django Apps*
---> python manage.py startapp book_store
+#Creating Django Apps
+--> python manage.py startapp book_store, myProject, polls       
